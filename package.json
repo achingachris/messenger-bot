@@ -4,7 +4,8 @@
   "description": "Messanger Tutorial",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -18,9 +19,13 @@
   },
   "homepage": "https://github.com/ChrisAchinga/devc20-messanger#readme",
   "dependencies": {
+    "@babel/core": "^7.12.0",
+    "@babel/node": "^7.10.5",
+    "@babel/preset-env": "^7.12.0",
     "body-parser": "^1.19.0",
     "dotenv": "^8.2.0",
     "ejs": "^3.1.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.5"
   }
 }
