@@ -21,3 +21,6 @@ Head over to pages section on the facebook app or web and click on the add (+) i
 After clicking on the `Create Page` button, you will upload the profile and cover photo for your page.
 (I used free images from https://unsplash.com/s/photos/facebook)
 
+//notes
+
+webhook is abridge btn facebook and your app
