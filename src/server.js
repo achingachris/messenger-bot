@@ -1,24 +1,24 @@
-require("dotenv").config();
-import express from "express";
-import bodyParser from "body-parser";
-import viewEngine from "./config/viewEngine";
-import initWebRoutes from "./routes/web";
+require('dotenv').config()
+import express from 'express'
+import bodyParser from 'body-parser'
+import viewEngine from './config/viewEngine'
+import initWebRoutes from './routes/web'
 
-let app = express();
+let app = express()
 
 // config view engine
-viewEngine(app);
+viewEngine(app)
 
 // config bodyparser
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // web routes
-initWebRoutes(app);
+initWebRoutes(app)
 
 // port
-let port = process.env.PORT || 8000;
+let port = process.env.PORT || 8000
 
 app.listen(port, () => {
-  console.log(`App running on port ${port}`);
-});
+  console.log(`App running on port ${port}`)
+})
